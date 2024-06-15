@@ -4,6 +4,7 @@ namespace GraphQLDemo.Queries
 {
     public class Query
     {
+        [UsePaging]
         public IEnumerable<Book> GetBook()
             => new List<Book>()
             {

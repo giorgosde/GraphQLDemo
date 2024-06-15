@@ -32,3 +32,21 @@ query {
   }
 }
 ```
+
+#### Paginated Query
+```
+query {
+  book(first: 1, after: null, last: null, before: null) {
+    nodes {
+      title
+      author {
+        name
+      }
+    }
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+    }
+  }
+}
+```
