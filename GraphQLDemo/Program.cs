@@ -13,4 +13,6 @@ builder.Services
 var app = builder.Build();
 app.MapGraphQL();
 
+app.UseGraphQLVoyager("/ui-voyager");
+
 app.Run();

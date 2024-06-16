@@ -5,6 +5,7 @@ GraphQL demo - cheatsheet using .NET 9 and [Hot Chocolate](https://chillicream.c
 
 #### Page
 `https://localhost:XXXX/graphql/`
+`https://localhost:XXXX/ui-voyager`
 
 #### Basic Query
 ```
