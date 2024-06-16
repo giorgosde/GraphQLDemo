@@ -50,3 +50,26 @@ query {
   }
 }
 ```
+
+#### Sorting Query
+```
+query {
+  book(order: {title: ASC}) {
+    nodes {
+      title
+    }
+  }
+}
+```
+
+
+#### Filtering Query
+```
+query {
+  book(where: {title: {eq: "Foo"}}) {
+    nodes {
+      title
+    }
+  }
+}
+```

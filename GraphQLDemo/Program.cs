@@ -4,7 +4,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     .AddGraphQLServer()
-    .AddQueryType<Query>();
+    .AddQueryType<Query>()
+    .AddFiltering()
+    .AddSorting();
 
 var app = builder.Build();
 app.MapGraphQL();
