@@ -1,3 +1,4 @@
+using GraphQLDemo.Mutations;
 using GraphQLDemo.Queries;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()
+    .AddMutationType<Mutation>()
     .AddFiltering()
     .AddSorting();
 

@@ -73,3 +73,16 @@ query {
   }
 }
 ```
+
+#### Mutation
+```
+mutation Test {
+  addBook(input: {
+    title: "Test"
+  }) {
+    book {
+      title
+    }
+  }
+}
+```
